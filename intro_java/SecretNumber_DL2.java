@@ -14,18 +14,18 @@ public class SecretNumber_DL2 {
         d4=n;
 
         if (d1!=d2&&d1!=d3&&d1!=d4&&d2!=d3&&d2!=d4&&d3!=d4) {
-              ++score;
+          ++score;
         }
         if (d3*3==d1) {
           ++score;
         }
         if (d4+d3+d2+d1==27) {
-            ++score;
+          ++score;
         }
         if (score == 3) {
           System.out.println(score);
-                System.out.println("The secret number is " + nOrg);
-                break;
+          System.out.println("The secret number is " + nOrg);
+          break;
         }
         else {
           continue;
@@ -33,9 +33,6 @@ public class SecretNumber_DL2 {
         // if (score == 3) {
         //   System.out.println("The secret number is " + nOrg);
     }// end for loop
-
-
-
   }
 }
 // (d1!=d2&&d1!=d3&&d1!=d4&&d2!=d3&&d2!=d4&&d3!=d4)
