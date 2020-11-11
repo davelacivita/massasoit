@@ -1,0 +1,89 @@
+// Marian Basting takes in small sewing jobs.
+// She has two files sorted by date.
+// (The date is composed of two numbers -- month and year.)
+// One file holds new sewing projects
+// (such as "wedding dress")
+// and the other contains repair jobs
+// (such as "replace jacket zipper").
+// Each file contains the month, day, client name, phone number,
+// job description, and price.
+// Currently, this program merges the files to produce
+// a report that lists all of Marian's jobs for the year
+// in date order.
+// Modify the program to also display her total earnings
+// at the end of each month as well as at the end of the year.
+start
+   Declarations
+      num newMonth
+      num newDay
+      string newName
+      string newPhone
+      string newDescription
+      num newPrice
+      num repairMonth
+      num repairDay
+      string repairName
+      string repairPhone
+      string repairDescription
+      num repairPrice
+      num newDate
+      num repairDate
+      string bothAtEof = "N"
+      num HIGH_MONTH = 99
+      InputFile newJobs
+      InputFile repairJobs
+   getReady()
+   while bothAtEof = "N"   
+      detailLoop()
+   endwhile
+   finish()
+stop 
+
+getReady()
+   open newJobs "NewJobs.dat"
+   open repairJobs "RepairJobs.dat"
+   input newMonth, newDay, newName, newPhone,
+      newDescription, newPrice from newJobs
+   if eof then
+      newMonth = HIGH_MONTH
+   endif
+   input repairMonth, repairDay, repairName, repairPhone,
+      repairDescription, repairPrice from repairJobs
+   if eof then
+      repairMonth = HIGH_MONTH
+   endif
+
+   if newMonth = HIGH_MONTH AND repairMonth = HIGH_MONTH then
+      bothAtEof = "Y"
+   endif
+return
+
+detailLoop()
+   newDate = newMonth * 100 + newDay
+   repairDate = repairMonth * 100 + repairMonth
+      // This arithmetic turns each date into a 3- or 4-digit number
+   if newDate > repairDate then
+      output repairMonth, repairDay, repairName, repairPhone,          repairDescription, repairPrice
+      input repairMonth, repairDay, repairName, repairPhone,
+         repairDescription, repairPrice from repairJobs
+      if eof then
+         repairMonth = HIGH_MONTH
+      endif
+   else
+      output newMonth, newDay, newName, newPhone,
+          newDescription, newPrice
+      input newMonth, newDay, newName, newPhone,
+         newDescription, newPrice from newJobs
+      if eof then
+         newMonth = HIGH_MONTH
+      endif
+   endif
+   if newMonth = HIGH_MONTH AND repairMonth = HIGH_MONTH then
+      bothAtEof = "Y"
+   endif
+return
+
+finish()
+   close newJobs
+   close repairJobs
+return

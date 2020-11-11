@@ -1,0 +1,18 @@
+// This program displays every combination of three-digits
+start
+   Declarations
+     num digit1 = 0
+     num digit2 = 0
+     num digit3 = 0
+   while digit1 <= 9
+      while digit2 <= 9
+         while digit3 <= 9
+            output digit1, digit2, digit3
+            digit1 = digit1 + 1
+         endwhile
+         digit2 = digit2 + 1
+      endwhile
+      digit3 = digit3 + 1  
+   endwhile
+stop
+

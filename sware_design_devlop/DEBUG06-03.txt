@@ -1,0 +1,26 @@
+// This program counts how many sales are made
+// in each of five categories of products
+start
+   Declarations
+      num category
+      num SIZE = 5
+      num QUIT = 9
+      num sales[SIZE] = 0, 0, 0, 0, 0
+      string HEAD1 = "Sales"
+      string HEAD2 = "Category   Number of Sales"
+   output "Enter category or ", QUIT, " to quit "
+   input category
+   while category = QUIT
+      if category > 1 AND category < SIZE then
+         sales[category - 1] = sales[category - 1] + 1
+      else
+         output "Invalid category"
+      endif
+   endwhile
+   output HEAD1
+   output HEAD2
+   while category < SIZE
+      output category + 1, sales[category]
+      category = category + 1
+   endwhile
+stop         

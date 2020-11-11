@@ -1,0 +1,87 @@
+// This application reads sales data for a real estate broker.
+// The user enters a record for each of 10 salespeople
+//    containing the salesperson's name,
+//    the number of properties sold by that person during the month,
+//    and the total value of those properties.
+// The data records are sorted by value so the data for
+//    the top three salespeople can be displayed.
+// Modify the program to
+// (1) enter data for any number of salespeople up to 60
+// (2) allow the user to choose whether to see 
+//       (a) the data for the top three salespeople
+//           (or fewer if 3 are not entered) by value
+//       (b) the data for the top three salespeople
+//           (or fewer if 3 are not entered) by
+//           number of properties sold
+
+start
+   Declarations
+      num SIZE = 10
+      string names[SIZE]
+      num properties[SIZE]
+      num values[SIZE]
+      num count
+      num NUM_TO_DISPLAY = 3
+      num comps
+      num x
+      num y
+      num tempProp
+      num tempVal
+      string tempName
+   getReady()
+   display()
+   finish()
+stop
+
+getReady()
+   count = 0
+   while count < SIZE
+      output "Enter salesperson name "
+      input names[count]
+      output "Enter number of properties sold "
+      input properties[count]
+      output "Enter total value of those properties "
+      input values[count]
+      count = count + 1
+   endwhile
+return
+
+display()
+   sort()
+   count = 0
+   while count < NUM_TO_DISPLAY
+      output names[count], properties[count], values[count]
+      count = count + 1
+   endwhile
+return
+
+
+finish()
+   output "End of display"
+return
+
+sort()
+   comps = SIZE - 1
+   while y < comps
+      x = 0
+      while x < comps
+         if values[x] < values[x + 1] then
+            swap()
+         endif
+         x = x + 1
+      endwhile
+      y = y + 1
+   endwhile
+return
+
+void swap()
+   tempName = names[x + 1]
+   names[x + 1] = names[x]
+   names[x] = tempName
+   tempProp = properties[x + 1]
+   properties[x + 1] = properties[x]
+   properties[x] = tempProp
+   tempVal = values[x + 1]
+   values[x + 1] = values[x]
+   values[x] = tempVal
+return

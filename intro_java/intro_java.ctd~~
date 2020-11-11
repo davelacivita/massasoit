@@ -1,0 +1,208 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Intro to Java" prog_lang="custom-colors" readonly="False" tags="java" ts_creation="1601206852.88" ts_lastsave="1601738322.79" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Chpt01" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601206874.41" ts_lastsave="1601207010.4" unique_id="2">
+			<rich_text></rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Chpt02" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601207010.4" ts_lastsave="1601240254.49" unique_id="3">
+			<rich_text>09/21/2020
+   •  Programs are called “classes”
+   • Java is “strongly typed”
+      ◇ primatives: num, character, Boolean
+      ◇ can't be broken down
+   • non-primatives: string
+      ◇ decompositable
+   • Numbers: 
+      ◇ whole number - intergers
+      ◇ floating point - decimals
+</rich_text>
+			<rich_text scale="h3" weight="heavy">      ◇ byte &gt; short &gt; int &gt; long &gt; float &gt; double</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text scale="h3" weight="heavy">      ◇ </rich_text>
+			<rich_text weight="heavy">1 byte &gt; 2 bytes &gt; 4 bytes &gt; 8 bytes &gt; 4 bytes &gt; 8 bytes</rich_text>
+			<rich_text>
+   • Declare variables:
+      </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+   • Same as:
+      </rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+   • double=15 will output 15.0
+   • char is single letter with single quotes
+   • Boolean is true or false
+   • Characters:
+      ◇ ASCII is subset of Unicode
+         ▪ when you type “char A' same as “num 15” but modified by “char”
+         ▪ casting is telling a “char” to be its “int”
+   • Modulus is remainder of divsion... only the remainder
+      ◇ int f=5%3
+         ▪ f=2
+   • 
+
+   </rich_text>
+			<codebox char_offset="429" frame_height="50" frame_width="800" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="java" width_in_pixels="True">int age;
+age = 21;</codebox>
+			<codebox char_offset="451" frame_height="50" frame_width="800" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="java" width_in_pixels="True">int age=21;</codebox>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="IT Security Foundations" prog_lang="custom-colors" readonly="False" tags="lynda, it, security" ts_creation="1601738322.79" ts_lastsave="1601753021.53" unique_id="4">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Core Security Principals" prog_lang="custom-colors" readonly="False" tags="lynda" ts_creation="1601738367.66" ts_lastsave="1601739251.64" unique_id="5">
+			<rich_text>• Avoid Social Engineering
+   ◇ trick you to complete a task
+   ◇ hardest attacks to defend against
+      ▪ easy attack, no technical skills
+   ◇ take advantage of busy employees
+   ◇ Phishing - email
+   ◇ Vishing - phone call
+   ◇ Be aware of people looking for too much info.
+</rich_text>
+			<rich_text weight="heavy">   ◇ People are weakest link</rich_text>
+			<rich_text>
+• Attack Surfaces
+   ◇ Vulnerability - a flaw that can exploited
+      ▪ Passive attacks - monitor transmissions
+      ▪ Active - break in to system
+   ◇ Surfaces:
+      ▪ software - apps and OS
+         - vulnerabilities
+      ▪ hardware - 
+         - stealing phone or cutting cable
+         - exposure to bogus networks
+            → attack home network
+      ▪ users
+         - lack of education of user
+         - IoT - collect and exchange data
+            → growing attack surface
+      ▪ Reduce risk by reducing vulnerabilities
+         - update systems
+         - enact software restiction
+         - remove unnecessay software and services
+         - close ports
+         - MAC address filtering
+         - user education
+   ◇ Threat Modeling
+      ▪ identify possible weaknesses and ways criminals can us the info</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Understanding Malware" prog_lang="custom-colors" readonly="False" tags="lynda" ts_creation="1601739579.98" ts_lastsave="1601741719.38" unique_id="6">
+			<rich_text>• Viruses and Worms
+   ◇ viruses self replicate but need a way to propagate to other hosts
+      ▪ spread within a system
+      ▪ how to spread
+         - email attacment
+         - downloaded application
+         - removable devices
+   ◇ workms are self-propagating viruses
+      ▪ replicate through the system comsuming resources
+   ◇ Basic phases
+      ▪ Probe
+      ▪ Penetrate
+      ▪ Persist
+      ▪ Propagate
+      ▪ Paralyze
+   ◇ Storm Worm
+   ◇ Code Red
+   ◇ Today's malware behaves like a virus and worm
+   ◇ Minimize 
+      ▪ antivirus
+      ▪ Windows Defender
+      ▪ think before you click
+• Eliminating unwanted surveilance
+   ◇ Spyware - records keystrokes and activity
+      ▪ sends to remote server without permission
+   ◇ Ransomware
+      ▪ Sends phishing email
+         - clicks 
+      ▪ attempts to execute and spawn processes
+         - encrypts files and sends key to Command and Control (C&amp;C)
+         - C&amp;C sends randsome note
+         - attacker my have copies of files
+      ▪ defend
+         - think before click
+         - spam filters
+         - back up files
+• Trojans
+   ◇ great at imperosnating
+      ▪ use wrapper 
+         - looks innocent or familiar
+      ▪ avoid risky websites
+      ▪ websites - tools to look up risky web sites
+• root kit
+   ◇ infiltrate a system and create a backdoor
+   ◇ gather inteligence
+   ◇ drill further into system
+   ◇ not a virus
+      ▪ may not have a signature
+   ◇ hard to detect
+• buffer overflow 
+      ▪ process or program adds more data than a buffer can hold
+      ▪ risky resource management
+• Zero-Day attacks
+   ◇ takes advantage of vulnerabitilty that is unknown or undisclosed by the vendor
+   ◇ pattern base detection
+      ▪ cannot detect new or unknown attacks
+   ◇ </rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Investigating Internet Security" prog_lang="custom-colors" readonly="False" tags="lynda" ts_creation="1601741187.54" ts_lastsave="1601752956.11" unique_id="7">
+			<rich_text>• Secure Websites
+   ◇ https with a lock
+      ▪ secure connection
+      ▪ both sides exchange a shared key
+      ▪ no one in the middle can see info
+      ▪ doesn't insure the website is legitimate
+• Cookies
+   ◇ text files
+• blocking malicious content
+   ◇ use secure browser
+      ▪ keep up to date
+   ◇ avoid drive by download
+   ◇ JavaScript can be insecure
+• Avoiding browser threats
+   ◇ secure browsers actively examine pages</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Mobile and Wireless Security" prog_lang="custom-colors" readonly="False" tags="lynda" ts_creation="1601741212.66" ts_lastsave="1601752927.61" unique_id="8">
+			<rich_text> Securing WiFi
+   ◇ change name and passwd
+   ◇ turn off uPnP
+   ◇ update firmware
+• Shared Key
+   ◇ passphrase instead of password
+• Conceal you access point
+   ◇ disable SSID broadcasting
+   ◇ use MAC address filtering
+• Protecting mobile devices
+   ◇ subject to phishing, etc
+   ◇ unsecured network
+      ▪ man in the middle attack
+      ▪ wifi pine apple
+         - set up to look like a free access point</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Secure DEvices and Applications" prog_lang="custom-colors" readonly="False" tags="lynda" ts_creation="1601741235.95" ts_lastsave="1601752951.88" unique_id="9">
+			<rich_text>• Keep data private
+   ◇ EFS on Windows
+   ◇ BitLocker on Enterprise
+• Under standing Cryptography
+   ◇ Symmetric encription
+      ▪ single shared key
+         - AES and DES algorythm
+   ◇ Asymmetric
+      ▪ uses private and public key
+      ▪ PGP - pretty go protection
+         - RSA algorythm
+   ◇ Hashing
+      ▪ md5 
+      ▪ SHA
+   ◇ variable length input to fixed length value
+• Email security
+   ◇ social engineering
+   ◇ phishing</rich_text>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Cybersecurity Foundations" prog_lang="custom-colors" readonly="False" tags="lynda, IT" ts_creation="1601753021.53" ts_lastsave="1601753021.53" unique_id="10">
+		<rich_text></rich_text>
+	</node>
+</cherrytree>

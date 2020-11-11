@@ -1,0 +1,80 @@
+// This pseudocode should create a list that describes annual profit
+// statistics for a retail store. Input records contain a department
+// name (for example, �Cosmetics�) and profits for each quarter for
+// the last two years. The program should determine whether
+// the profit is higher, lower, or the same
+// for this full year compared to the last full year.
+
+start
+   Declarations
+      string department
+      num salesQuarter1ThisYear
+      num salesQuarter2ThisYear
+      num salesQuarter3ThisYear
+      num salesQuarter4ThisYear // repeated 3rd quarter
+      num salesQuarter1LastYear
+      num salesQuarter2LastYear
+      num salesQuarter3LastYear // repeated this year
+      num salesQuarter4LastYear
+      num totalThisYear
+      num totalLastYear
+      string status
+      string QUIT = "ZZZZ" // num can not contain characters
+   housekeeping()
+   while department <> QUIT
+      compareProfit()
+   endwhile
+   finishUp()
+stop
+
+housekeeping()
+   output "Enter department name or ", QUIT, " to quit "
+   input department // undeclared variable
+return
+
+compareProfit()
+   getSalesData()
+   sumSalesData()
+   if totalThisYear > totalLastYear then
+      status = "Higher" // totalThisYear must be greater than totalLastYear
+   else
+      if totalThisYear < totalLastYear then // can not be equal for Lower status
+         status = "Lower"
+      else
+         status = "Same"
+     endif
+   endif
+   output department, status
+   output "Enter department name or ", QUIT, " to quit "
+   input department
+return
+
+getSalesData()
+   output "Enter sales for first quarter this year "
+   input salesQuarter1ThisYear
+   output "Enter sales for second quarter this year "
+   input salesQuarter2ThisYear // wrong variable
+   output "Enter sales for third quarter this year "
+   input salesQuarter3ThisYear // wrong variable
+   output "Enter sales for fourth quarter this year "
+   input salesQuarter4ThisYear
+   output "Enter sales for first quarter last year "
+   input salesQuarter1LastYear
+   output "Enter sales for second quarter last year "
+   input salesQuarter2LastYear // wrong variable
+   output "Enter sales for third quarter last year "
+   input salesQuarter3LastYear
+   output "Enter sales for fourth quarter last year "
+   input salesQuarter4LastYear // wrong variable
+return
+
+sumSalesData()
+    totalThisYear = salesQuarter1ThisYear + salesQuarter2ThisYear +
+       salesQuarter3ThisYear + salesQuarter4ThisYear // repeated 2nd quarter
+    totalLastYear = salesQuarter1LastYear + salesQuarter2LastYear +
+       salesQuarter3LastYear + salesQuarter4LastYear // repeated 2nd quarter
+return
+
+finishUp()
+   output "End of report"
+return

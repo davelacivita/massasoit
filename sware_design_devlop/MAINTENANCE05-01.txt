@@ -1,0 +1,69 @@
+// The QuickCopy company currently makes 100,000 copies per year
+// at 15 cents each.
+// They expect to increase the number of copies produced
+// by 4 percent per year each year for the next 10 years,
+// starting with this year.
+// They also expect the price of each copy to increase
+// by 3 cents per year, starting with this year.
+// This program displays the company's expected
+// income for each of the next 10 years.
+// Modify it to be more efficient.
+start
+   Declarations
+      num year = 1
+      num copies = 100000
+      num price = 0.15
+      num total = 0
+      num COPIES_INCREASE = 0.04
+      num PRICE_INCREASE = 0.03
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+      year = year + 1
+      copies = copies + copies * COPIES_INCREASE
+      price = price + price * PRICE_INCREASE
+      total = total + copies * price
+      output year, total
+stop
+

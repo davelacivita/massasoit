@@ -1,0 +1,39 @@
+// A standard mortgage is paid monthly over 30 years.
+// This program is intended to output 360 payment coupons
+// for each new borrower at a mortgage company.
+// Each coupon lists the month number, year number,
+// and a friendly mailing reminder.
+start
+   Declarations
+      num MONTHS = 12
+      num YEARS = 30
+      string MSG = "Remember to allow 5 days for mailing"
+      num acctNum
+      num yearCounter
+      num monthCounter // undeclared variable
+      string QUIT = "ZZZ" // undeclared variable
+   housekeeping()
+   while acctNum <> QUIT
+      printCoupons()
+   endwhile
+   finish()
+stop
+
+housekeeping()
+   print "Enter account number or ", QUIT, " to quit "
+   input acctNum
+return
+
+printCoupons() // for loops
+   for yearCounter = 1 to YEARS step 1
+      for monthCounter = 1 to MONTHS step 1
+         print acctNum, monthCounter, yearCounter, MSG
+      endfor
+   endfor
+   output "Enter account number or ", QUIT, " to quit "
+   input acctNum
+return
+
+finish()
+   output "End of job"
+return

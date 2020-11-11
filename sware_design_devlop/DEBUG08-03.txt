@@ -1,0 +1,56 @@
+// This application reads sales data for an automobile dealership.
+// Up to 100 sale amounts can be entered. The entered sale amounts
+// are sorted so that the median sale can be displayed.
+start
+   Declarations
+      num SIZE = 100
+      num QUIT = 99999
+      num saleAmount
+      num sales[SIZE]
+      num count = 0
+      num middlePosition
+      num x
+      num y
+      num temp
+      num comps
+   getReady()
+   while saleAmount <> QUIT and count < SIZE
+      detailLoop()
+   endwhile
+   finish()
+stop
+
+getReady()
+   output "Enter sale amount "
+   input saleAmount
+return
+
+detailLoop()
+   count = count + 1
+   output "Enter sale amount "
+   input saleAmount
+return
+
+finish()
+   sort()
+   middlePosition = SIZE / 2
+   output "The median sale amount is ", sales[middlePosition]
+return
+
+sort()
+   comps = count - 1
+   while y < comps
+      x = 0
+      while x < comps
+         if sales[x] > sales[x + 1] then
+            swap()
+         endif
+      endwhile
+   endwhile
+return
+
+void swap()
+   temp = sales[x + 1]
+   sales[x + 1] = sales[x]
+
+return

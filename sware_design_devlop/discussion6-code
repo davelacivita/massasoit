@@ -1,0 +1,28 @@
+num sub
+num SIZE = 100
+num RANGE = 5
+num studentNum[SIZE] = 1, 2, etc
+string name[SIZE] = “last, first”, etc...
+num homework[SIZE] = average, etc...
+num labs[SIZE] = average, etc...
+num quizzes[SIZE] = average, etc...
+num exams[SIZE] = average, etc…
+num finalAverage[SIZE] = average, etc
+string FINAL_GRADE[RANGE] = “A”, “B”, etc…
+num SCORE[RANGE] = 90, 80, 70, 60, 0
+string letterGrade
+
+
+sub = RANGE - 1
+while finalAverage < SCORE[sub]
+  sub = sub - 1
+endwhile
+letterGrade = FINAL_GRADE[sub]
+
+
+sub = 0
+while studentNum - 1 <= SIZE
+  output name[sub], homework[sub], labs[sub], quizzes[sub], exams[sub], finalAverage[sub], letterGrade
+  sub = sub + 1
+  studentNum = studentNum + 1
+endwhile

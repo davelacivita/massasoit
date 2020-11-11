@@ -1,0 +1,34 @@
+// Program lets user input scores on four tests
+// Average is computed and letter grade is determined
+// Letter grades are based on 90 for an A, 80 for a B, and so on
+start
+   string name
+   num score 
+   num NUM_TESTS = 4
+   num NUM_RANGES = 5
+   num RANGES[NUM_RANGES] = 90, 80, 70, 60, 0
+   string QUIT = "ZZZZZ"
+   string GRADES[NUM_RANGES] = "A", "B", "C", "D", "F"
+   num total
+   num average
+   num sub
+   output "Enter student name or ", QUIT, " to quit "
+   input name
+   while name <> QUIT
+      sub = 0
+      total = 0
+      while sub < NUM_TESTS
+         output "Enter score "
+         input score
+         total = score
+      endwhile
+      sub = 0
+      while average < RANGES
+         sub = sub + 1
+      endwhile
+      letterGrade = GRADES[sub]
+      output name, letterGrade
+      output "Enter student name or ", QUIT, " to quit "
+      input lettergrade
+   endwhile
+stop

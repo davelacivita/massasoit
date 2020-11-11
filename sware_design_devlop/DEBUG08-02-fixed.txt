@@ -1,0 +1,40 @@
+// This application reads student typing test data
+// including number of errors on the test, and the number
+// of words typed per minute. Grades are assigned based
+// on the following table:
+//           Errors
+// Speed       0       1    2 or more
+// 0-30        C       D       F
+// 31-50       C       C       F
+// 51-80       B       C       D
+// 81-100      A       B       C
+// 101 and up  A       A       B
+start
+   Declarations
+      num MAX_ERRORS = 2
+      num errors
+      num wordsPerMinute
+      String grades[5][3] = {"C", "D", "F"},
+                            {"C", "C", "F"},
+                            {"B", "C", "D"},
+                            {"A", "B", "C"},
+                            {"A", "A", "B"} //string not num
+      num LIMITS = 5
+      num speedLimits[LIMITS] = 0, 31, 51, 81, 101
+      num row
+      num wordsPerMinute // undeclared variable
+
+   output "Enter number of errors on the test "
+   input errors
+   if errors > MAX_ERRORS then
+      errors = 2 // 2 is the most errors allowed
+   endif
+   output "Enter the speed in words per minute "
+   input wordsPerMinute // speed undeclared
+   row = 0
+   while row < LIMITS AND wordsPerMinute >= speedLimits[row] // evaluate based on position row
+      row = row + 1
+   endwhile
+   row = row - 1
+   output "Your grade is ", grades[wordsPerMinute][errors] // columns should be errors 
+stop

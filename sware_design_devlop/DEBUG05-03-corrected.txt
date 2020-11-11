@@ -1,0 +1,15 @@
+// This program displays every combination of three-digits
+start
+   Declarations
+     num digit1 = 0
+     num digit2 = 0
+     num digit3 = 0
+   // replaced with for loop
+   for digit1 = 0 to 9 step 1
+    for digit2 = 0 to 9 step 1
+      for digit3 = 0 to 9 step 1
+        output digit1 digit2 digit3
+      endfor
+    endfor
+  endfor
+stop

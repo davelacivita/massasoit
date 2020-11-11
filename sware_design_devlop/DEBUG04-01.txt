@@ -1,0 +1,57 @@
+// This pseudocode should create a report that contains an
+// apartment complex rental agent's commission. The
+// program accepts the ID number and name of the agent who
+// rented the apartment, and the number of bedrooms in the
+// apartment. The commission is $100 for renting a three-bedroom
+// apartment, $75 for renting a two-bedroom apartment, $55 for
+// renting a one-bedroom apartment, and $30 for renting a studio
+// (zero-bedroom) apartment. Output is the salesperson’s
+// name and ID number and the commission earned on the rental.
+start
+   Declarations
+      num salesPersonID
+      string salesPersonName
+      num numBedrooms
+      num COMM_3 = $100.00
+      num COMM_2 = $75.00
+      num COMM_1 = $55.00
+      num COMM_STUDIO = $30.00
+      num QUIT = 9999
+   getReady()
+   while salesPersonID <> QUIT
+      detailLoop()
+   endwhile
+   finish()
+stop
+
+getReady()
+   output "Enter salesperson ID or ", QUIT, " to quit "
+   output salesperson_ID
+return
+
+detailLoop()
+   output "Enter name "
+   input salesPersonName
+   output "Enter number of bedrooms rented "
+   input numBedrooms
+   if numBedrooms > 3 then
+      commissionEarned = COMM_3
+   else
+      if numBedrooms < 2 then
+         commissionEarned = COMM_2
+      else
+         if numBedrooms > 1 then
+            commission = COMM_1
+         else
+            commission = COMM_4
+         endif
+      endif
+   endif
+   output salesPersonID, salesPersName, commissionEarned
+   output "Enter salesperson ID or ", QUIT, " to quit "
+   input salesPersonID
+return
+
+finish()
+   output "End of report"
+return

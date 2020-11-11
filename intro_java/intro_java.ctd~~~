@@ -1,0 +1,48 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="0" foreground="" is_bold="True" name="Intro to Java" prog_lang="custom-colors" readonly="False" tags="java" ts_creation="1601206852.88" ts_lastsave="1601206874.41" unique_id="1">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Chpt01" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601206874.41" ts_lastsave="1601207010.4" unique_id="2">
+			<rich_text></rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="True" name="Chpt02" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1601207010.4" ts_lastsave="1601240254.49" unique_id="3">
+			<rich_text>09/21/2020
+   •  Programs are called “classes”
+   • Java is “strongly typed”
+      ◇ primatives: num, character, Boolean
+      ◇ can't be broken down
+   • non-primatives: string
+      ◇ decompositable
+   • Numbers: 
+      ◇ whole number - intergers
+      ◇ floating point - decimals
+</rich_text>
+			<rich_text scale="h3" weight="heavy">      ◇ byte &gt; short &gt; int &gt; long &gt; float &gt; double</rich_text>
+			<rich_text>
+</rich_text>
+			<rich_text scale="h3" weight="heavy">      ◇ </rich_text>
+			<rich_text weight="heavy">1 byte &gt; 2 bytes &gt; 4 bytes &gt; 8 bytes &gt; 4 bytes &gt; 8 bytes</rich_text>
+			<rich_text>
+   • Declare variables:
+      
+   • Same as:
+      
+   • double=15 will output 15.0
+   • char is single letter with single quotes
+   • Boolean is true or false
+   • Characters:
+      ◇ ASCII is subset of Unicode
+         ▪ when you type “char A' same as “num 15” but modified by “char”
+         ▪ casting is telling a “char” to be its “int”
+   • Modulus is remainder of divsion... only the remainder
+      ◇ int f=5%3
+         ▪ f=2
+   • 
+
+   </rich_text>
+			<codebox char_offset="429" frame_height="50" frame_width="800" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="java" width_in_pixels="True">int age;
+age = 21;</codebox>
+			<codebox char_offset="451" frame_height="50" frame_width="800" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="java" width_in_pixels="True">int age=21;</codebox>
+		</node>
+	</node>
+</cherrytree>

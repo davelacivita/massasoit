@@ -1,0 +1,66 @@
+// Sunrise Freight charges standard
+// per-pound shipping prices to the five states they serve
+// -- IL    IN    OH    MI    WI
+// -- 0.60  0.55  0.70  0.65  0.67
+// Modify this program to reduce its size
+// by using arrays
+start
+   Declarations
+      string state
+      num pounds
+      string foundIt
+      string BAD_STATE_MSG = "Sorry, we do not ship to  "
+      string FINISH = "XXX"
+
+   getReady()
+   while state <> FINISH
+      findPrice()
+   endwhile
+   finishUp()
+stop
+
+getReady()
+   output "Enter state or ", FINISH, " to quit"
+   input state
+return
+
+findPrice()
+   foundIt = "N"
+   if state = "IL" then
+      price = 0.60
+      foundIt = "Y"
+   else
+      if state = "IN" then
+         price = 0.55
+         foundIt = "Y"
+      else
+         if state = "MI" then
+            price = 0.70
+            foundIt = "Y"
+      else
+         if state = "OH" then
+            price = 0.65
+            foundIt = "Y"
+         else
+            if state = "WI" then
+               price = 0.67
+               foundIt = "Y"
+            endif
+         endif
+      endif
+   endif
+   if foundIt = "N" then
+      output BAD_STATE_MSG, state
+   else
+      output �Enter pounds �
+      input pounds
+      output �Cost per pound to ship to �, state, � is �, price
+      output �Total cost is �, price * pounds
+   endif
+   output "Enter next state or ", FINISH, " to quit"
+   input state
+return
+
+finishUp()
+   output "End of job"
+return
