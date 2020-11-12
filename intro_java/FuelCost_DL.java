@@ -38,6 +38,7 @@ public class FuelCost_DL
     System.out.printf("Your annual cost of fuel is $%,1.2f \n", ((costPerGallonsOfGas * gallonsToFillTank) / (endingOdometerReading - beginningOdometerReading)) * numberMilesDrivenPerYear);
 
     // Every time I tried to combine it into 1 long line I got errors.
+    keyboard.close();
 
 
 

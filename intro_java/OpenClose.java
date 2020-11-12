@@ -12,3 +12,7 @@ public class // classNameHere
 
 // Scanner keyboard = new Scanner(System.in);
 // System.out.println("");
+
+public static void main(String[] args) {
+  
+}
