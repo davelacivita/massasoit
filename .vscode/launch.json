@@ -1,0 +1,280 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Debug (Launch) - Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Baseball<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Baseball",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-BuyingAComputer_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "BuyingAComputer_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Craps<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Craps",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoAssert<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "DemoAssert",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoOutput<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "DemoOutput",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoSelection<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "DemoSelection",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoStringMethod<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "DemoStringMethod",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-DemoUserInput<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "DemoUserInput",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Deprecation_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Deprecation_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FirstProgram<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "FirstProgram",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Friendly_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Friendly_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FtoC<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "FtoC",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-FuelCost_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "FuelCost_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-HelloWorld<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-MyFirstJavaProgram<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "MyFirstJavaProgram",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-NewProgram<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "NewProgram",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Ounces<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Ounces",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Perfect_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Perfect_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-RandomUniqueNumbers_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "RandomUniqueNumbers_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Rock_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Rock_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Seconds_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Seconds_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SecretNumber_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "SecretNumber_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SecretNumber_DL1<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "SecretNumber_DL1",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SecretNumber_DL2<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "SecretNumber_DL2",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-SecretNumber_DL3<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "SecretNumber_DL3",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-StringDemo<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "StringDemo",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Taxes<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Taxes",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Taxes_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Taxes_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Telephone<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Telephone",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-TestJava<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "TestJava",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-ValidDate_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "ValidDate_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-Volume_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "Volume_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-firstMiddleLast_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "firstMiddleLast_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-friendlyNumber<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "friendlyNumber",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-multiplicationTable_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "multiplicationTable_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-squirrels_DL<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "squirrels_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-taxesHigh<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "taxesHigh",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
+            "name": "Debug (Launch)-taxesLow<massasoit_c7f9dfb>",
+            "request": "launch",
+            "mainClass": "taxesLow",
+            "projectName": "massasoit_c7f9dfb"
+        }
+    ]
+}
