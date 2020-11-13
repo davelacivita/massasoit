@@ -30,6 +30,8 @@ public class Telephone
     n = n/2;
 
     System.out.println(n);
+    keyboard.close();
+
 
   } //end of main
 } // end of class

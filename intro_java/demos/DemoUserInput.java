@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.Scanner;
 
 public class DemoUserInput
@@ -12,7 +14,6 @@ public class DemoUserInput
     String lastName;
     int age;
     boolean opinion;
-    int zipCode;
     char middleInitial;
     int houseNumber;
     String street;
@@ -49,6 +50,8 @@ public class DemoUserInput
     System.out.println(houseNumber);
     System.out.println(middleInitial);
     System.out.println(street);
+
+    keyboard.close();
 
 
   }

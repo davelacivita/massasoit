@@ -43,5 +43,6 @@ public class friendlyNumber
   System.out.println("Sorry that's not a friendly number!");
   }// end else
   }// end else
+  keyboard.close();
   }// end main
 }// end class

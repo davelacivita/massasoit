@@ -1,0 +1,54 @@
+// This application reads 10 numbers and sorts them,
+// then displays the three highest numbers
+start
+   Declarations
+      num SIZE = 10
+      num number
+      num numbers[SIZE]
+      num count = 0
+      num temp // undeclared variable
+
+   getReady()
+   while count < SIZE // <= would allow for 11 numbers entered
+      detailLoop()
+   endwhile
+   finish()
+stop
+
+getReady()
+   output "Enter a number "
+   input number
+return
+
+detailLoop()
+   numbers[count] = number
+   output "Enter a number "
+   count = count + 1 // need to increment
+return
+
+finish()
+   sort()
+   output "The highest three are ", numbers[SIZE-1], numbers[SIZE-2], numbers[SIZE-3] //highest numbers are at the end of the array
+return
+
+sort()
+   num y = 0
+   num COMPS = count - 1
+   while y < COMPS
+      num x = 0 // initialize x as part of outer loop
+      while x < COMPS
+         if numbers[x+1] < numbers[x] then // compare to next element in  array
+            swap()
+         endif
+         x = x + 1
+      endwhile
+      y = y + 1
+   endwhile
+return
+
+swap()
+   num temp
+   temp = numbers[x + 1]
+   numbers[x + 1] = numbers[x]
+   numbers[x] = temp
+return

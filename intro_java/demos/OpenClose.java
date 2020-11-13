@@ -1,6 +1,6 @@
-import java.util.Scanner;
+package demos;
 
-public class // classNameHere
+public class OpenClose
 {
   public static void main(String[] args)
   {
@@ -12,7 +12,3 @@ public class // classNameHere
 
 // Scanner keyboard = new Scanner(System.in);
 // System.out.println("");
-
-public static void main(String[] args) {
-  
-}

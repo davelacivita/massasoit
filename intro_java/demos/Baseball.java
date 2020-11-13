@@ -1,3 +1,5 @@
+package demos;
+
 import java.util.Scanner;
 
 public class Baseball
@@ -30,6 +32,8 @@ public class Baseball
     totalCostGame = totalCostBeers + totalCostHotDogs + costTicket + costPark + COSTFINE + costBook;
 
     System.out.println(totalCostGame);
+
+    keyboard.close();
 
   }//end main
 }//end class

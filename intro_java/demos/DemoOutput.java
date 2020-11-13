@@ -1,3 +1,5 @@
+package demos;
+
 public class DemoOutput {
   public static void main(String[] args) {
     // System.out.printf("%1.2f \n", 123.45678);
