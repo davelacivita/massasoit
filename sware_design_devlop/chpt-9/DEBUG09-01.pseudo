@@ -1,0 +1,18 @@
+// Program gives user a 10% raise
+start
+   Declarations
+      num payRate
+      num RAISE_FACTOR = 0.10
+   displayInstructions()
+   input payRate // misspelled variable
+   newPay = payRate + payRate * RAISE_FACTOR
+   output "Your new pay rate will be ", newPay
+stop
+
+void displayInstructions() // method named wrong
+   output "Enter your current pay rate"
+   output "in dollars and cents"
+   output "Do not use a dollar sign - "
+   output "Use digits and a decimal point only"
+return // void type so no return data
+

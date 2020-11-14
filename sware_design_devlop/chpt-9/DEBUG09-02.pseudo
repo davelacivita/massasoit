@@ -1,0 +1,18 @@
+// Program gets two numbers and computes their product
+start
+   Declarations
+      num firstNumber
+      num secondNumber
+   output "Input first number >> "
+   input firstNumber
+   output "Input second number >> "
+   input secondNumber //wrong variable
+   computeProduct(firstNumber, secondNumber) //must pass arguments
+stop
+
+num computeProduct(num first, num second) //data type num not sting
+   Declarations
+      num answer
+   answer = first * second
+   output first, "times ", second, " is ", answer //variable is answer not result
+return
