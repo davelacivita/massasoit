@@ -3,19 +3,6 @@
 // then computes gross pay and displays the name and gross pay
 // Modify the program to use four methods named
 // getName(), getHours(), getPayRate(), and computeGross()
-start
-   Declarations
-      
-   output "Input name >> "
-   input name
-   output "Input hours worked >> "
-   input hours
-   output "Input pay rate >> "
-   input payRate
-   gross = hours * payRate
-   output name, " earned $", gross
-stop
-
 
 start
     Declarations
