@@ -10,7 +10,7 @@ start
    computeProduct(firstNumber, secondNumber) //must pass arguments
 stop
 
-num computeProduct(num first, num second) //data type num not sting
+void computeProduct(num first, num second) //method returns no data must be void type
    Declarations
       num answer
    answer = first * second
