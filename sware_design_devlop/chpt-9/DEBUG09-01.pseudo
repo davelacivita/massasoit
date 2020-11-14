@@ -14,5 +14,5 @@ void displayInstructions() // method named wrong
    output "in dollars and cents"
    output "Do not use a dollar sign - "
    output "Use digits and a decimal point only"
-return // void type so no return data
+return // void type so no return type
 
