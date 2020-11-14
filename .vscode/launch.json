@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Rock_DL",
+            "request": "launch",
+            "mainClass": "Rock_DL",
+            "projectName": "massasoit_bde52a23"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Untitled",
             "request": "launch",
             "mainClass": "Untitled",
