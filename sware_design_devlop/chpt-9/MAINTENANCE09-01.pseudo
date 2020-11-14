@@ -23,7 +23,7 @@ start
         num gross
     getName()
     computeGross()
-    output name, " earned $", gross
+    output name, " earned $", gross //I chose to keep the final output statement as a stand alone statment since the name "computeGross()" doesn't imply any output.
 stop
 
 string getName()
