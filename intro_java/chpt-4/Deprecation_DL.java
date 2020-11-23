@@ -42,7 +42,7 @@ public class Deprecation_DL {
     }// end for loop
 
     // Double Declining Balance
-    System.out.println("The Double Declining Balance Deprecation for the asset is: ");
+    System.out.println("\nThe Double Declining Balance Deprecation for the asset is: ");
 
     for (int u = 1; u <= usefulLife; ++u) {
       bookValue = cost - accDeprecation;
@@ -52,7 +52,7 @@ public class Deprecation_DL {
     }// end for loop
 
     // Sum of Years Digits
-    System.out.println("The Sum of the Year Digits Deprecation for the asset is: ");
+    System.out.println("\nThe Sum of the Year Digits Deprecation for the asset is: ");
 
     int denominator = 0;
     for (int u = 1; u <= usefulLife; ++u) {

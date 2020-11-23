@@ -1,0 +1,59 @@
+// The Date class contains a month, day, and year,
+// and methods to set and display the values.
+// The month cannot be set to less than 1 or more than 12,
+// and the day of the month cannot be set to less than 1
+// or more than the number of days in that month.
+// The demonstration program instantiates four Date objects and
+// purposely assigns invalid values to some of the arguments;
+// the class methods will correct the invalid values.
+class Date
+   Declarations
+      private num month
+      private num day
+      private num year
+   public void setDate(num mo, da, yr)
+      num HIGH_MONTH = 12
+      num HIGHEST_DAYS[HIGH_MONTH] =
+         31, 29, 31, 30, 31, 30, 31, 31, 30, 31, 30
+      if mo > HIGH_MONTH then
+         month = HIGH_MONTH
+      else
+         if mo < 1 then
+            month = 1
+         else
+            month = mo
+       endif
+      endif
+      if da > HIGHEST_DAYS[month] then
+         day = HIGHEST_DAYS[month]
+      else
+         if da < 1 then
+            day = 1
+               else
+         day = da
+      endif
+      year = yr
+   return
+   public void showDate()
+      output "Date: ", month, “/”, day, “/”, year
+   return
+endClass
+
+start
+   Declarations
+      Date birthday, anniversary, graduation, party
+   birthday.month = 6
+   birthday.day = 24
+   birthday.year = 1982
+   anniversary.setDate(10, 15, 2009)
+   graduation.setDate(14, 19, 2016)
+   party.setDate(7, 35, 2015)
+   output "Birthday "
+   birthday.showDate()
+   output "Anniversary "
+   anniversary.showDate()
+   output "Graduation "
+   graduation.showDate()
+   output "Party "
+   party.showDate()
+stop
