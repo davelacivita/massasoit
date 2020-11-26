@@ -13,23 +13,23 @@ public class OverloadedMethods_DL {
 
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter your first name.");
-        firstName = keyboard.nextLine();
+            firstName = keyboard.nextLine();
         System.out.println("Please enter your last name.");
-        lastName = keyboard.nextLine();
+            lastName = keyboard.nextLine();
         System.out.println("Please enter your street number.");
-        houseNumber = keyboard.nextInt();
-        keyboard.nextLine();
+            houseNumber = keyboard.nextInt();
+            keyboard.nextLine();
         System.out.println("Please enter your street name.");
-        streetName = keyboard.nextLine();
+            streetName = keyboard.nextLine();
         System.out.println("Please enter your city name.");
-        cityName = keyboard.nextLine();
+            cityName = keyboard.nextLine();
         System.out.println("Please enter your state name.");
-        stateName = keyboard.nextLine();
+            stateName = keyboard.nextLine();
         System.out.println("Please enter your zip code.");
-        zipCode = keyboard.nextInt();
-        keyboard.nextLine();
+            zipCode = keyboard.nextInt();
+            keyboard.nextLine();
         System.out.println("Please enter your phone number.");
-        phoneNumber= keyboard.nextLong();
+            phoneNumber= keyboard.nextLong();
 
         dataBase(firstName, lastName);
         System.out.println();
