@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CarnivalGame_DL",
+            "request": "launch",
+            "mainClass": "CarnivalGame_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - OverloadedMethods_DL",
             "request": "launch",
             "mainClass": "OverloadedMethods_DL",
