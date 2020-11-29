@@ -32,7 +32,7 @@ public class ZipCode_DL {
         printPipe();
         Scanner keyboard = new Scanner(System.in);
 
-        System.out.println("Would you like to enter another zip code? (y or n)");
+        System.out.println("\nWould you like to enter another zip code? (y or n)");
         response = (char)System.in.read();
         if (response == 'y') {
             answer = true;
@@ -43,6 +43,8 @@ public class ZipCode_DL {
         }
         } // end while
     } //end main
+
+
 
     public static int getZip() {
         Scanner keyboard = new Scanner(System.in);
@@ -63,8 +65,7 @@ public class ZipCode_DL {
     } // end getCheckDigit
 
     public static void printCode(int value) {
-        int digit = value;
-        switch (digit) {
+        switch (value) {
             case 1:
             System.out.print(":::||");
             break;
