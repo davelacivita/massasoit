@@ -8,12 +8,14 @@ public class Seconds_DL
 
     // declare variables
 
-    long seconds, years, days, hours, minutes;
+    long seconds, years, days, hours, minutes, orgSeconds;
+    
 
     // user input
 
     System.out.println("Please enter the number of seconds you would like calculated: ");
     seconds = keyboard.nextLong();
+    orgSeconds = seconds;
 
     // calculations
 
@@ -28,7 +30,7 @@ public class Seconds_DL
 
     // outputs
 
-    System.out.println("That many seconds contains the following: ");
+    System.out.println("For " + orgSeconds + " you will have: ");
     System.out.println("Years: " + years);
     System.out.println("Days: " + days);
     System.out.println("Hours: " + hours);

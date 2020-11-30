@@ -20,7 +20,7 @@ public class ZipCode_DL {
         zipOrg = zipOrg%10;
         d5 = zipOrg;
 
-        int checkDigit = getCheckDigit(d1,  d2,  d3,  d4,  d5);
+        int checkDigit = getCheckDigit(getSum(zip));
         System.out.printf("The bar code for the zip code %05d is: \n", zip );
         printPipe();
         printCode(d1);
@@ -58,8 +58,8 @@ public class ZipCode_DL {
     } // end getZip
 
 
-    public static int getCheckDigit(int d1, int d2, int d3, int d4, int d5) {
-        int sum = d1+d2+d3+d4+d5;
+    public static int getCheckDigit(int sum) {
+        //int sum = d1+d2+d3+d4+d5;
         int checkDigit = 10 - (sum%10);
         return checkDigit;
     } // end getCheckDigit
@@ -101,6 +101,23 @@ public class ZipCode_DL {
 
     public static void printPipe() {
         System.out.print("|");
-    }
+    }// end method
+
+    public static int getSum(int zip) {
+        int sum;
+
+        sum = ((zip/10000) + ((zip%10000)/1000) + ((zip%1000)/100) + ((zip%100)/10) + (zip%10));
+        System.out.println(sum);
+        return sum;
+        // d1=zipOrg/10000;
+        // zipOrg= zipOrg%10000;
+        // d2=zipOrg/1000;
+        // zipOrg=zipOrg%1000;
+        // d3=zipOrg/100;
+        // zipOrg=zipOrg%100;
+        // d4=zipOrg/10;
+        // zipOrg = zipOrg%10;
+        // d5 = zipOrg;
+    }   
 
 } //end class

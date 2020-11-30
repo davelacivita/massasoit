@@ -8,8 +8,8 @@ public class FuelCost_DL
 
     // declare variables
 
-    int beginningOdometerReading, endingOdometerReading,totalMilesPerFillUp, numberMilesDrivenPerYear;
-    double gallonsToFillTank, costPerGallonsOfGas, milesPerGallon, costToFillTank, costFuelPerMile, annualCostOfFuel;
+    int beginningOdometerReading, endingOdometerReading, numberMilesDrivenPerYear;
+    double gallonsToFillTank, costPerGallonsOfGas;
 
     // ask for user input
 
