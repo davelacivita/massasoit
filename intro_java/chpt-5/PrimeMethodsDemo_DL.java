@@ -3,7 +3,7 @@ public class PrimeMethodsDemo_DL {
         boolean result = true;
         boolean isPrime = true;
         String METHOD_PRIME = "Prime: ";
-        String METHOD_SH = "Sophie Germain: ";
+        String METHOD_SG = "Sophie Germain: ";
         String METHOD_TWIN = "Twin Prime: ";
         String METHOD_MP = "Mersenne Prime: ";
 
@@ -18,10 +18,10 @@ public class PrimeMethodsDemo_DL {
         if (isPrime == true && result == true) {
             if (TypesOfPrimes_DL.isSophieGermainPrime(input) == false) {
                 result = false;
-                System.out.println(METHOD_SH + result);
+                System.out.println(METHOD_SG + result);
             }
             else {
-                System.out.println(METHOD_SH + result);
+                System.out.println(METHOD_SG + result);
             }
             if (TypesOfPrimes_DL.isTwinPrime(input) == false) {
                 result = false;
@@ -39,7 +39,7 @@ public class PrimeMethodsDemo_DL {
             }
         }// end if
         else {
-            System.out.println(METHOD_SH + result);
+            System.out.println(METHOD_SG + result);
             System.out.println(METHOD_TWIN + result);
             System.out.println(METHOD_MP + result);
         }
