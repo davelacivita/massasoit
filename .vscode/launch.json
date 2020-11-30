@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - PrimeMethodsDemo_DL",
+            "request": "launch",
+            "mainClass": "PrimeMethodsDemo_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TypesOfPrimes_DL",
             "request": "launch",
             "mainClass": "TypesOfPrimes_DL",

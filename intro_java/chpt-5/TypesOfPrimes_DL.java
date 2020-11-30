@@ -3,7 +3,7 @@ public class TypesOfPrimes_DL {
 
         public static int getInput() {        
             Scanner keyboard = new Scanner(System.in);
-            System.out.println("Plese enter a number.");
+            System.out.println("Plese enter an intereger.");
             int input = keyboard.nextInt();
             keyboard.close();
             return input;
