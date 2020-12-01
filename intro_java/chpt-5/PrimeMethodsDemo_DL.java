@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class PrimeMethodsDemo_DL {
     public static void main(String[] args) {
         boolean result = true;
@@ -8,7 +10,7 @@ public class PrimeMethodsDemo_DL {
         String METHOD_TWIN = "Twin Prime: ";
         String METHOD_MP = "Mersenne Prime: ";
 
-        int input = TypesOfPrimes_DL.getInput();
+        int input = getInput();
         result = (TypesOfPrimes_DL.determineIfPrime(input));
         isPrime = result;
         System.out.println(METHOD_PRIME + result);
@@ -32,4 +34,13 @@ public class PrimeMethodsDemo_DL {
      
         
     }// end main
+
+
+    public static int getInput() {        
+        Scanner keyboard = new Scanner(System.in);
+        System.out.println("Plese enter an intereger.");
+        int input = keyboard.nextInt();
+        keyboard.close();
+        return input;
+    }// end method
 }// end class

@@ -1,13 +1,4 @@
-import java.util.Scanner;
 public class TypesOfPrimes_DL {
-
-        public static int getInput() {        
-            Scanner keyboard = new Scanner(System.in);
-            System.out.println("Plese enter an intereger.");
-            int input = keyboard.nextInt();
-            keyboard.close();
-            return input;
-        }// end method
 
         public static boolean determineIfPrime(int valuePassed) {
             boolean isPrime = true;
