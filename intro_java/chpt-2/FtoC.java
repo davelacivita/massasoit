@@ -11,6 +11,6 @@ public class FtoC
 
     c = (f-32)*5/9;
     System.out.println(c);
-
+    keyboard.close();
   } //end of main
 } // end of class

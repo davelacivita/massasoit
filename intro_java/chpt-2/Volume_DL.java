@@ -25,6 +25,6 @@ public class Volume_DL
     gallonsOfWater = volumeOfCylinder * 7.48;
     System.out.printf("Your cylinder has a volume of " + volumeOfCylinder + " cubic feet.\n");
     System.out.printf("Your cylinder will hold " + gallonsOfWater + " gallons of water.\n");
-
+    keyboard.close();
   }//end main
 }//end class

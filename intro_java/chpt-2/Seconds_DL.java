@@ -9,7 +9,7 @@ public class Seconds_DL
     // declare variables
 
     long seconds, years, days, hours, minutes, orgSeconds;
-    
+
 
     // user input
 
@@ -36,6 +36,6 @@ public class Seconds_DL
     System.out.println("Hours: " + hours);
     System.out.println("Minutes: " + minutes);
     System.out.println("Seconds: " + seconds);
-
+    keyboard.close();
   }//end main
 }//end class

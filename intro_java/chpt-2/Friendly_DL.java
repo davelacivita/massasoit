@@ -48,5 +48,6 @@ public class Friendly_DL
     else{
       System.out.println("Sorry that's not a friendly number!");
     } // end else
+    keyboard.close();
   }// end main
 }// end class

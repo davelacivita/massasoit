@@ -54,6 +54,7 @@ public class ZipCode_DL {
             input = keyboard.nextInt();
         }
         while (input < 0 || input > 99999);
+        
         return input;
     } // end getZip
 

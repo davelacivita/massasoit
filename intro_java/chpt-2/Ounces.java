@@ -29,6 +29,6 @@ public class Ounces
   System.out.println("Pint containers: " + pints);
   System.out.println("Cup containers: " + cups);
   System.out.println("Remaining ounces: " + ounces);
-
+  keyboard.close();
   }
 }

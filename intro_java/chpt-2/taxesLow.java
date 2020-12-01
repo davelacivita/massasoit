@@ -72,6 +72,7 @@ public class taxesLow
       tax = (taxableIncome - BRACKET6) * RATE7;
       taxTotal = tax + TAX1 + TAX2 + TAX3 + TAX4 + TAX5 + TAX6;
     }
-    System.out.printf("Your total income tax due is $%.2f\n", taxTotal);    
+    System.out.printf("Your total income tax due is $%.2f\n", taxTotal);  
+    keyboard.close();  
   } // end main
 } // end class

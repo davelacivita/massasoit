@@ -50,6 +50,6 @@ public class squirrels_DL
     // outputs
     System.out.println("In the morning there are " + pile + " nuts left in the pile.");
     System.out.println("Each squirell gets " + (pile / 5) + " nuts and the chipmunk ends up with " + (chipmunk + 1) + " nuts.");
-
+    keyboard.close();
   } //end main
 } //end class

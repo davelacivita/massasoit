@@ -37,6 +37,6 @@ public class firstMiddleLast_DL
     System.out.print(middle);
     System.out.println(last);
     System.out.println("Total ASCII value of your initials is " + ((int) first + (int) middle + (int) last));
-
+    keyboard.close();
   } // end main
 } // end class
