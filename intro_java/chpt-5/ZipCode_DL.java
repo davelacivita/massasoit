@@ -1,5 +1,6 @@
 import java.util.Scanner;
 public class ZipCode_DL {
+    
     public static void main(String[] args) throws Exception {
         int d1, d2, d3, d4, d5;
         boolean answer = true;
@@ -30,7 +31,6 @@ public class ZipCode_DL {
         printCode(d5);
         printCode(checkDigit);
         printPipe();
-        Scanner keyboard = new Scanner(System.in);
 
         System.out.println("\nWould you like to enter another zip code? (y or n)");
         response = (char)System.in.read();
@@ -39,7 +39,6 @@ public class ZipCode_DL {
         }
         else {
             answer = false;
-            keyboard.close();
         }
         } // end while
     } //end main

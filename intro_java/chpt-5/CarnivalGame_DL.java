@@ -2,11 +2,10 @@ import java.util.Random;
 
 public class CarnivalGame_DL {
     public static void main(String[] args) {
-        int sum;
         int wins = 0;
 
         for (int i = 1 ; i <= 100; ++i) {
-            sum = 0;
+            int sum = 0;
             sum = sum + dieRoll(6);
             sum = sum + dieRoll(20);
             sum = sum + dieRoll(8);
