@@ -8,16 +8,12 @@ public class Perfect_DL
       for (int i = 1; i < n ; ++i) {
       if (n % i == 0) {
         sum = sum + i;
-        if (sum == n) {
-          System.out.println(n);
-          } // end if
-        } // end if
-      } // end for
+      } // end if
     } // end for
+      if (sum == n) {
+          System.out.println(n);
+        } // end if
 
-
-
-
-
+    } // end for
   } //end main
 } // end class
