@@ -21,38 +21,14 @@ public class TypesOfPrimes_DL {
         }// end method
 
         public static boolean isSophieGermainPrime(int n) {
-            // Sophie Germaine Prime: a number n such that n and 2 * n + 1 are both prime
-            boolean isSophieGermainPrime = true;
-            int y = (2*n) + 1;
-            if (determineIfPrime(y) == true) {
-                return isSophieGermainPrime;
-            }
-            else {
-                return false;
-            }
+            return determineIfPrime(n) && determineIfPrime(2*n+1);
         }// end method
 
         public static boolean isTwinPrime(int n) {
-            // Twin Prime: a number n such that n and n + 2 are both prime
-            boolean isTwinPrime = true;
-            int y = n + 2;
-            if (determineIfPrime(y) == true) {
-                return isTwinPrime;
-            }
-            else {
-                return false;
-            }
+            return determineIfPrime(n) && determineIfPrime(n+2);
         }// end method
 
         public static boolean isMersennePrime(int n) {
-            // Mersenne Prime: a prime number n such that 2n - 1 is also prime
-            boolean isMersennePrime = true;
-            int y = 2*n - 1;
-            if (determineIfPrime(y) == true) {
-                return isMersennePrime;
-            }
-            else {
-                return false;
-            }
+            return determineIfPrime(n) && determineIfPrime(2*n-1);
         }//end method
 } // end class

@@ -93,7 +93,7 @@ public class ZipCode_DL {
             case 9:
             System.out.print("|:|::");
             break;
-            default:
+            case 0:
             System.out.print("||:::");
             break;
         }
@@ -104,20 +104,12 @@ public class ZipCode_DL {
     }// end method
 
     public static int getSum(int zip) {
-        int sum;
-
-        sum = ((zip/10000) + ((zip%10000)/1000) + ((zip%1000)/100) + ((zip%100)/10) + (zip%10));
-        System.out.println(sum);
+        int sum = 0;
+        while (zip > 0) {
+            sum = sum + zip%10;
+            zip = zip/10;
+        }
         return sum;
-        // d1=zipOrg/10000;
-        // zipOrg= zipOrg%10000;
-        // d2=zipOrg/1000;
-        // zipOrg=zipOrg%1000;
-        // d3=zipOrg/100;
-        // zipOrg=zipOrg%100;
-        // d4=zipOrg/10;
-        // zipOrg = zipOrg%10;
-        // d5 = zipOrg;
     }   
 
 } //end class
