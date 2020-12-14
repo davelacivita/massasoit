@@ -31,7 +31,7 @@ public class ZipCode_DL {
         printCode(d5);
         printCode(checkDigit);
         printPipe();
-
+        
         System.out.println("\nWould you like to enter another zip code? (y or n)");
         response = (char)System.in.read();
         if (response == 'y') {
@@ -59,7 +59,6 @@ public class ZipCode_DL {
 
 
     public static int getCheckDigit(int sum) {
-        //int sum = d1+d2+d3+d4+d5;
         int checkDigit = 10 - (sum%10);
         return checkDigit;
     } // end getCheckDigit
