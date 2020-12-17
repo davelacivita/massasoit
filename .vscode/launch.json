@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AddressDemo",
+            "request": "launch",
+            "mainClass": "AddressDemo",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DemoAppointment",
             "request": "launch",
             "mainClass": "DemoAppointment",
