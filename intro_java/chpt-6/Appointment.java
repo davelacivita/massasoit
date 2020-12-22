@@ -8,8 +8,8 @@ private int day;
 private int year;
 private int hour;
 private int minute;
-//default constructor
 
+//default constructor
 public Appointment() {
     setMonth("January");
     setDay(1, "January", 1);
@@ -37,7 +37,7 @@ public Appointment() {
 //trap the user until they enter a valid month
 
 public void setMonth(String monthPassed) {
-    //Scanner keyboard = new Scanner(System.in);
+    Scanner keyboard = new Scanner(System.in);
     //monthPassed = keyboard.nextLine();
     while (
         monthPassed.equals ("January") == false
@@ -63,9 +63,13 @@ public void setMonth(String monthPassed) {
         monthPassed.equals ("November") == false
         &&
         monthPassed.equals ("December") == false
-    )// end while
-    System.out.println("Please enter January - December");
+        )// end while
+
+        {System.out.println("Please enter January - December");
+        monthPassed = keyboard.nextLine();
+}
     //keyboard.close();
+    this.month = monthPassed;
 }//end method
 
  
@@ -75,11 +79,11 @@ public void setMonth(String monthPassed) {
 //trap the user until they enter a valid hour
 
 public void setHour(int hourPassed) {
+    Scanner keyboard = new Scanner(System.in);
+
     while (hourPassed < 0 || hourPassed > 23) {
-        Scanner keyboard = new Scanner(System.in);
         System.out.println("Invalid hour, please use military time, 0-23");
         hourPassed = keyboard.nextInt();
-        keyboard.close();
     }// end while
     this.hour =hourPassed;
 }// end method
@@ -94,7 +98,6 @@ public void setYear(int yearPassed) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Invalid year, 0-2020.");
         yearPassed = keyboard.nextInt();
-        keyboard.close();
     }// end while
     this.year = yearPassed;
 }
@@ -108,7 +111,7 @@ public void setYear(int yearPassed) {
 public void setMinute(int minutePassed) {
     while (minutePassed < 0 || minutePassed > 59) {
         Scanner keyboard = new Scanner(System.in);
-        System.out.println("Invalid minte, please use 0-59");
+        System.out.println("Invalid minute, please use 0-59");
         minutePassed = keyboard.nextInt();
         keyboard.close();
     }// end while
@@ -125,15 +128,17 @@ public void setMinute(int minutePassed) {
 //remember to check if the year is a leap year
 
 public void setDay(int dayPassed, String monthPassed, int yearPassed) {
+   Scanner keyboard = new Scanner(System.in);
     while (validNumberDays(dayPassed, monthPassed, yearPassed) == false) {
         System.out.println("Please enter a correct day for the month entered.");
+        dayPassed = keyboard.nextInt();
     }// end while
+    this.day = dayPassed;
 }//end method
 
 
 public boolean validNumberDays (int dayPassed, String monthPassed, int yearPassed) {
     boolean leap = ((yearPassed% 4 == 0) && yearPassed % 100 != 0) || (yearPassed% 400 == 0);
-    if (leap == true);
     int maxDays;
     switch(monthPassed) {
         case "January":
@@ -154,7 +159,9 @@ public boolean validNumberDays (int dayPassed, String monthPassed, int yearPasse
         case "February":
             if (leap == true) {
                 maxDays = 29;
+                break;
             }
+       
             else 
                 maxDays = 28;
             break;
@@ -162,7 +169,7 @@ public boolean validNumberDays (int dayPassed, String monthPassed, int yearPasse
             maxDays = 31;
             break;
     }// end Switch
-    return dayPassed >= maxDays || dayPassed > 0;
+    return dayPassed <= maxDays && dayPassed > 0;
 
 }// end method
 
