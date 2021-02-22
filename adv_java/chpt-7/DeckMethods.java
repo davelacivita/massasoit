@@ -84,6 +84,8 @@ public static void printDeck(Card[] deckPassed)
   {
     if(deckPassed[i] != null)
         System.out.println(deckPassed[i].toString()); 
+        System.out.println();
+
   }//end loop 
  }//end method printDeck
  
@@ -127,5 +129,21 @@ public static void populateDeck(Card[] deckPassed)
    }//end outer for loop
    
  }//end method shuffleDeck
+
+ public static void bubbleSort(Card[] arr) {
+  int n = arr.length;
+  Card temp = null;
+  for(int i=0; i < n; i++){
+      for(int j=1; j < (n-i); j++){
+          if(arr[j-1].getValue() > arr[j].getValue()){
+              //swap elements
+              temp = arr[j-1];
+              arr[j-1] = arr[j];
+              arr[j] = temp;
+          }//end if
+
+      }//end for
+  }//end for
+}//end method
   
 }//end class
