@@ -8,25 +8,27 @@ public class MovingDay_DL {
         numFalse = getFalse();
 
         int size = numFalse + numTrue +1;
-        char[] movingDayArray = new char[size];
+        boolean[] movingDayArray = new boolean[size];
+
+        //movingDayArray[numTrue + 1] = 
 
         for (int t = 0; t < numTrue; ++t) {
-            movingDayArray[t] = 'T';
+            movingDayArray[t] = true;
             //System.out.println(t);
             //System.out.println(movingDayArray[t]);
         }//end for
 
         for (int f = numTrue + 1; f < size; ++f ) {
-            movingDayArray[f] = 'F';
+            movingDayArray[f] = false;
             //System.out.println(f);
             //System.out.println(movingDayArray[f]);
         }//end for
         System.out.println();
 
-        for (int i = 0; i < size; ++i) {
-            System.out.print(" " + i + "  ");
-        }        
-        System.out.println();
+        // for (int i = 0; i < size; ++i) {
+        //     System.out.print(" " + i + "  ");
+        // }        
+        // System.out.println();
 
         for (int i = 0; i < size; ++i) {
             System.out.print("| " + movingDayArray[i] + " ");
