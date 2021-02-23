@@ -130,6 +130,7 @@ public static void populateDeck(Card[] deckPassed)
    
  }//end method shuffleDeck
 
+ //sort decks by value
  public static void bubbleSort(Card[] arr) {
   int n = arr.length;
   Card temp = null;

@@ -1,4 +1,4 @@
-3import java.util.Scanner;
+import java.util.Scanner;
 
 public class multiplicationTable_DL {
   public static void main(String[] args) {
