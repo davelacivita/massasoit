@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DemoInheritAnimal",
+            "request": "launch",
+            "mainClass": "DemoInheritAnimal",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "Launch MagicSquare_DL",
             "request": "launch",
             "mainClass": "MagicSquare_DL",
