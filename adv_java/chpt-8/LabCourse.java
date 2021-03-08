@@ -16,8 +16,7 @@ public class LabCourse extends Course {
 
     public double setCourseCost() {
         if (department == "COMP" || department == "SCIE" || department == "PHYS") {
-            courseCost = courseCost + 100;
-            return courseCost; 
+            courseCost = courseCost + 100; 
         }
         return courseCost;
     }
