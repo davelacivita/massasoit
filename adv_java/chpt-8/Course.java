@@ -1,10 +1,9 @@
 import java.util.Scanner;
 
 public class Course {
-    String department;
-    int courseNumber, courseCredits;
-    double courseCost;
-    static String[] courseDept = {"ENGL", "MATH", "COMP", "HIST", "HUMN", "SCIE", "LANG", "PHYS"};
+    private String department;
+    private int courseNumber, courseCredits;
+    private double courseCost;
 
     //default
     public Course() {
@@ -15,12 +14,14 @@ public class Course {
     }
 
     //nondefault
-    public Course(String departmentPassed, int courseCreditsPassed, int courseNumberPassed) {
+    public Course(String departmentPassed, int courseNumberPassed, int courseCreditsPassed) {
         department = departmentPassed;
         courseNumber = courseNumberPassed;
         courseCredits = courseCreditsPassed;
         courseCost = (courseCredits/2) * 500;
     }
+
+   
 
     public static int setCourseNumber() {
         int courseNum;
@@ -29,8 +30,8 @@ public class Course {
             System.out.println("Please enter the course number between 001 - 399");
             courseNum = keyboard.nextInt();
         }
-        while (courseNum < 0 && courseNum > 399);
-        keyboard.close();
+        while (courseNum <= 0 && courseNum >= 399);
+        //keyboard.close();
         return courseNum;
     }
 
@@ -41,23 +42,9 @@ public class Course {
             System.out.println("Please enter the course credits: 3, 4 or 6");
             courseCredits = keyboard.nextInt();
         }
-        while (courseCredits != 3 && courseCredits != 4 && courseCredits != 6);
-        keyboard.close();
+        while (courseCredits != 3 || courseCredits != 4 || courseCredits != 6);
+        //keyboard.close();
         return courseCredits;
-    }
-
-    public static String setCourseDept() {
-        String userDept;
-        Scanner keyboard = new Scanner(System.in);
-        System.out.println("Please enter a department name: ENGL, MATH, COMP, HIST, HUMN, SCIE, LANG, PHYS");
-        userDept = keyboard.nextLine();
-        keyboard.close();
-        for (int i = 0; i < courseDept.length; ++i) {
-            if (courseDept[i] == userDept)
-            return userDept;
-        }
-        return "Please enter a department name";
-
     }
 
     public String getDepartment() {
@@ -91,5 +78,6 @@ public class Course {
         this.courseCredits == coursePassed.courseCredits &&
         this.courseCost == coursePassed.courseCost;
     }
+
 
 }//end class

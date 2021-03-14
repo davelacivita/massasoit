@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DemoWinstonAndCharlot_DL",
+            "request": "launch",
+            "mainClass": "DemoWinstonAndCharlot_DL",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "Launch DemoInheritAnimal",
             "request": "launch",
             "mainClass": "DemoInheritAnimal",

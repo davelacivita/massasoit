@@ -1,17 +1,20 @@
 public class LabCourse extends Course {
-   
+    private static String[] courseDept = {"COMP", "SCIE", "PHYS"};
+
      public LabCourse() {
-        department = "unknown";
-        courseNumber = 0;
-        courseCredits = 0;
-        courseCost = 0;
+         super();
+        // department = "unknown";
+        // courseNumber = 0;
+        // courseCredits = 0;
+        // courseCost = 0;
      }
 
      public LabCourse(String departmentPassed, int courseCreditsPassed, int courseNumberPassed) {
-        department = departmentPassed;
-        courseNumber = courseNumberPassed;
-        courseCredits = courseCreditsPassed;
-        courseCost = (courseCredits/2) * 500;
+         super(departmentPassed, courseNumberPassed, courseCreditsPassed);
+        // department = departmentPassed;
+        // courseNumber = courseNumberPassed;
+        // courseCredits = courseCreditsPassed;
+        // courseCost = (courseCredits/2) * 500;
     }
 
     public double setCourseCost() {
