@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MovingDay_RMM",
+            "request": "launch",
+            "mainClass": "MovingDay_RMM",
+            "projectName": "massasoit_c7f9dfb"
+        },
+        {
+            "type": "java",
             "name": "Launch DemoWinstonAndCharlot_DL",
             "request": "launch",
             "mainClass": "DemoWinstonAndCharlot_DL",
