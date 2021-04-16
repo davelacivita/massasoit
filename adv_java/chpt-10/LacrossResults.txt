@@ -1,0 +1,9 @@
+Pittsburgh 14 Tulsa 33
+
+Sedona 22 Pittsburgh 20
+
+Tulsa 11 Sedona 16
+
+Sedona 32 Pittsburgh 31
+
+Tulsa 21 Sedona 24

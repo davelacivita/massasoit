@@ -1,0 +1,147 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Combinations_DL",
+            "request": "launch",
+            "mainClass": "Combinations_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Combinations_yourInitials",
+            "request": "launch",
+            "mainClass": "Combinations_yourInitials",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch ReadingAFile",
+            "request": "launch",
+            "mainClass": "demos.ReadingAFile",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecursiveReverse_DL",
+            "request": "launch",
+            "mainClass": "RecursiveReverse_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HeadsTailsRecursion_DL",
+            "request": "launch",
+            "mainClass": "HeadsTailsRecursion_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch HeadsTailsRecursion_RMM",
+            "request": "launch",
+            "mainClass": "HeadsTailsRecursion_RMM",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Evens_DL",
+            "request": "launch",
+            "mainClass": "Evens_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch GetGrade",
+            "request": "launch",
+            "mainClass": "GetGrade",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoInheritAnimal",
+            "request": "launch",
+            "mainClass": "DemoInheritAnimal",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoRead",
+            "request": "launch",
+            "mainClass": "DemoRead",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoRunner_DL",
+            "request": "launch",
+            "mainClass": "DemoRunner_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoWinstonAndCharlotte",
+            "request": "launch",
+            "mainClass": "DemoWinstonAndCharlotte",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoWrite",
+            "request": "launch",
+            "mainClass": "DemoWrite",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Grains",
+            "request": "launch",
+            "mainClass": "Grains",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Handshakes",
+            "request": "launch",
+            "mainClass": "Handshakes",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Lacross_DL",
+            "request": "launch",
+            "mainClass": "Lacross_DL",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch RangeException",
+            "request": "launch",
+            "mainClass": "RangeException",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch RecursionDemo",
+            "request": "launch",
+            "mainClass": "RecursionDemo",
+            "projectName": "adv_java_2e5cafc2"
+        },
+        {
+            "type": "java",
+            "name": "Launch Recursive_Factorial",
+            "request": "launch",
+            "mainClass": "Recursive_Factorial",
+            "projectName": "adv_java_2e5cafc2"
+        }
+    ]
+}
