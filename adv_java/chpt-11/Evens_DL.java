@@ -5,24 +5,6 @@ public class Evens_DL {
     static int number = 0;
     static int count = 0;
 
-    public static int printEvens(int number) {
-
-        if (number < 0) {
-            return 0;
-        }
-
-        if (number % 2 == 0) {
-            ++count;
-            System.out.print(number + " ");
-            printEvens(number - 2);
-        }
-
-        else {
-            printEvens(number - 1);
-        }
-        
-        return count;
-    }
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         boolean valid = false;
@@ -46,4 +28,23 @@ public class Evens_DL {
         System.out.println("There are " + count + " even numbers between 0 and " + number + ".");
         keyboard.close();
     }//end main
+
+    public static int printEvens(int number) {
+
+        if (number < 0) {
+            return 0;
+        }
+
+        if (number % 2 == 0) {
+            ++count;
+            System.out.print(number + " ");
+            printEvens(number - 2);
+        }
+
+        else {
+            printEvens(number - 1);
+        }
+        
+        return count;
+    }
 }//end class

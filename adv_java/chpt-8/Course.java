@@ -79,6 +79,7 @@ public class Course {
     private int courseCredits;
     protected double courseCost;
 
+    //default constructor
     public Course() {
         this.department = "unknown";
         this.courseNumber = 0;
@@ -86,6 +87,8 @@ public class Course {
         this.courseCredits = 0;
     }// end default constructor
 
+    //non-default constructor
+    //send user entry to "set" methods
     public Course(String departmentPassed, int courseNumberPassed, int courseCreditsPassed) {
         setDepartment(departmentPassed);
         setCourseNumber(courseNumberPassed);
@@ -93,8 +96,11 @@ public class Course {
         setCourseCost(courseCreditsPassed);
     }// end non-default constructor
 
+    //trap user to enter a legit dept. name
+    //get dept from user
     public void setDepartment(String departmentPassed) {
         Scanner keyboard = new Scanner(System.in);
+        //if dept. entered is not a legit dept. have user re-enter info
         while (!departmentPassed.equals("ENGL") && !departmentPassed.equals("MATH") && !departmentPassed.equals("COMP")
                 && !departmentPassed.equals("HIST") && !departmentPassed.equals("HUMN")
                 && !departmentPassed.equals("SCIE") && !departmentPassed.equals("LANG")
@@ -102,9 +108,12 @@ public class Course {
             System.out.println("Please enter the department  ENGL, MATH, COMP, HIST, HUMN, SCIE, LANG, PHYS.");
             departmentPassed = keyboard.nextLine();
         } // end while
+
+        //asign user entry to department variable
         this.department = departmentPassed;
     }// end method
 
+    //trap user for legit course number
     public void setCourseNumber(int courseNumberPassed) {
         Scanner keyboard = new Scanner(System.in);
         while (courseNumberPassed < 001 || courseNumberPassed > 399) {
@@ -112,9 +121,12 @@ public class Course {
             courseNumberPassed = keyboard.nextInt();
             keyboard.nextLine();
         }
+
+        //set user entry to courseNumber variable
         this.courseNumber = courseNumberPassed;
     }// end method
 
+    //trap user for legit number of credits
     public void setCourseCredits(int courseCreditsPassed) {
         Scanner keyboard = new Scanner(System.in);
         while (courseCreditsPassed != 3 && courseCreditsPassed != 4 && courseCreditsPassed != 6) {
@@ -122,9 +134,12 @@ public class Course {
             courseCreditsPassed = keyboard.nextInt();
             keyboard.nextLine();
         }
+
+        //set user entry for courseCredits variable
         this.courseCredits = courseCreditsPassed;
     }// end method
 
+    //set course cost based on number of credits for the course
     public void setCourseCost(int courseCreditsPassed) {
         this.courseCost = courseCreditsPassed / 2 * 500;
     }
@@ -145,6 +160,7 @@ public class Course {
         return this.courseCost;
     }// end method
 
+    //print dept, number, credits and cost for course entered by user
     public String toString() {
         return "Department: " + this.department + "\nNumber: " + this.courseNumber + "\nCredits: " + this.courseCredits
                 + "\nCost: " + this.courseCost;
