@@ -27,5 +27,28 @@ public class PremiumSugarSmashPlayer extends SugarSmashPlayer {
         return "\nplayerID: " + this.getPlayerID() + "\nPlayer Screen Name: " + this.getPlayerScreenName()
                 + "\nPlayer Highest Score: " + scores;
     }
+
+    public boolean equals(PremiumSugarSmashPlayer playerPassed) {
+        boolean sameScores = true;
+        if(this.highestScores.length != playerPassed.highestScores.length) {
+            sameScores = false;
+            return false;
+        }
+
+        for(int i = 0; i < playerPassed.highestScores.length; ++i) {
+            if(this.highestScores[i] != playerPassed.highestScores[i]) {
+                sameScores = false;
+                return false;
+            }
+        }
+
+        return 
+        this.getPlayerID() == playerPassed.getPlayerID()
+        &&
+        this.getPlayerScreenName().equals(playerPassed.getPlayerScreenName())
+        &&
+        sameScores;
+
+    }
     
 }//end class

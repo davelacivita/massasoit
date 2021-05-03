@@ -36,7 +36,5 @@ public class RecursiveReverse_DL {
             array[lo] = temp;
             reverse(array, lo + 1, hi - 1);
         }
-
-
     }//end method
 }//end class

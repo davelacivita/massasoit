@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch DemoInOut_DL",
+            "request": "launch",
+            "mainClass": "DemoInOut_DL",
+            "projectName": "chpt-9_3d974782"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputException",
+            "request": "launch",
+            "mainClass": "InputException",
+            "projectName": "chpt-9_3d974782"
+        },
+        {
+            "type": "java",
+            "name": "Launch InputException_RMM",
+            "request": "launch",
+            "mainClass": "InputException_RMM",
+            "projectName": "chpt-9_3d974782"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"

@@ -4,17 +4,6 @@ public class HeadsTailsRecursion_DL {
     static int totalBet, initialBet;
     static int numFlips;
 
-    public static int maxLoss(int bet, int flips) {
-        if (flips == 0) {
-            return totalBet;
-        }
-        else {
-            totalBet = bet + maxLoss(bet * 2, flips - 1);
-        }
-        return totalBet;
-
-    }// end method
-
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Please enter your intitial bet.");
@@ -25,6 +14,17 @@ public class HeadsTailsRecursion_DL {
         keyboard.close();
 
     }// end main
+
+    public static int maxLoss(int bet, int flips) {
+        if (flips == 0) {
+            return totalBet;
+        }
+        else {
+            totalBet = bet + maxLoss(bet * 2, flips - 1);
+        }
+        return totalBet;
+
+    }// end method
 
 }// end class
 
