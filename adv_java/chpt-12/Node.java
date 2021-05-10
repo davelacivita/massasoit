@@ -1,16 +1,15 @@
 public class Node {
-    
-    public String data;
-    public Node next;
+    private String description;
+    private Node link;
 
     public Node() {
-        data = "";
-        next = null;
-    }//end method
+        description = null;
+        link = null;
+    }// end constructor
 
-    public Node(String s) {
-        data = s;
-        next = null;
-    }//end method
-
+    public Node(String newDescription, Node linkValue) {
+        description = newDescription;
+        link = linkValue;
+    }// end constructor
+    
 }//end class

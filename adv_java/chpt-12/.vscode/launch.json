@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Thing_List_JBS",
+            "request": "launch",
+            "mainClass": "Thing_List_JBS",
+            "projectName": "chpt-12_7551a7f8"
+        },
+        {
+            "type": "java",
+            "name": "Launch MsMallard",
+            "request": "launch",
+            "mainClass": "MsMallard",
+            "projectName": "chpt-12_7551a7f8"
+        },
+        {
+            "type": "java",
+            "name": "Launch NodeLinkedList",
+            "request": "launch",
+            "mainClass": "NodeLinkedList",
+            "projectName": "chpt-12_7551a7f8"
+        },
+        {
+            "type": "java",
+            "name": "Launch DemoNode",
+            "request": "launch",
+            "mainClass": "DemoNode",
+            "projectName": "chpt-12_7551a7f8"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
